@@ -24,7 +24,7 @@ def check_plagiarism(file_path, api_key):
 
     if response.status_code != 200:
         print(f'Error checking plagiarism for {file_path}: {response.text}')
-        print('this should print data', data)
+        print(f'this should print data: {data}')
         return False
 
     result = response.json()
