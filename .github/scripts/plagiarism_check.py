@@ -17,7 +17,7 @@ def check_plagiarism(file_path, api_key):
         'base64': content.encode('utf-8').decode('utf-8')
     }
 
-    print(data)
+    print('this should print data', data)
 
     response = requests.post('https://api.copyleaks.com/v3/businesses/submit/url',
                              headers=headers, data=json.dumps(data))
@@ -28,6 +28,13 @@ def check_plagiarism(file_path, api_key):
 
     result = response.json()
     return result['found']
+
+# Return content from mdx file
+def get_content(file_path):
+    with open(file_path, 'r') as file:
+        content = file.read()
+    return content
+    
 
 def main():
     api_key = os.environ['COPYLEAKS_API_KEY']
