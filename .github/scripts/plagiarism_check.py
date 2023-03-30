@@ -17,13 +17,14 @@ def check_plagiarism(file_path, api_key):
         'base64': content.encode('utf-8').decode('utf-8')
     }
 
-    print('this should print data', data)
+   
 
     response = requests.post('https://api.copyleaks.com/v3/businesses/submit/url',
                              headers=headers, data=json.dumps(data))
 
     if response.status_code != 200:
         print(f'Error checking plagiarism for {file_path}: {response.text}')
+        print('this should print data', data)
         return False
 
     result = response.json()
