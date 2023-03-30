@@ -17,6 +17,8 @@ def check_plagiarism(file_path, api_key):
         'base64': content.encode('utf-8').decode('utf-8')
     }
 
+    print(data)
+
     response = requests.post('https://api.copyleaks.com/v3/businesses/submit/url',
                              headers=headers, data=json.dumps(data))
 
