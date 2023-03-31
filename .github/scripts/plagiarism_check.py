@@ -1,4 +1,3 @@
-import glob
 import json
 import os
 import sys
@@ -43,15 +42,15 @@ class PlagiarismChecker:
 
 
 if __name__ == "__main__":
+    changed_files = os.getenv("CHANGED_FILES")
     api_key = os.getenv("COPYLEAKS_API_KEY")
 
+    changed_files = json.loads(changed_files)
+
+    # filter out only markdown files
+    md_files = [f for f in changed_files if f.endswith(".mdx") and os.path.exists(f)]
+
     plagiarism_checker = PlagiarismChecker(api_key=api_key)
-
-    md_files = glob.glob("**/*.mdx", recursive=True)
-
-    print("----\n\n")
-    print("\n".join(md_files))
-    print("\n\n----")
 
     flagged_files = []
     plagiarism_found = False
