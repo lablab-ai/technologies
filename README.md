@@ -8,7 +8,7 @@ In this guide you will learn how to publish technology pages on lablab.
 
 ### General information
 
-- [Check out the technology page template](https://github.com/lablab-ai/technologies/template.mdx)
+- [Check out the technology page template](https://github.com/lablab-ai/technologies/blob/main/template.mdx)
 - Please **don’t** copy the content from other websites!
 - Please **don’t** use AI content generators to create the content for this page!
 
