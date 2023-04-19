@@ -46,3 +46,10 @@ If you want to publish a new technology on lablab.ai, follow these steps:
 <Img src="https://imagedelivery.net/K11gkZF3xaVyYzFESMdWIQ/ee5b4e35-9d20-4c6d-11bf-6470d82cc700/full" alt="boilerplates and libraries"/>
 
 Finally, visit our GitHub repo and add AI technologies here, get inspiration from the existing pages when creating your own: [https://github.com/lablab-ai/technologies](https://github.com/lablab-ai/technologies).
+
+## How to add page?
+
+1. Write it!
+2. Create two pull requests:
+    - to `technologies` branch - thanks to that our internal system will be able to check if your files contains plagiarism/AI generated content (required)
+    - to `main` branch
