@@ -43,7 +43,7 @@ If you want to publish a new technology on lablab.ai, follow these steps:
 <Img src="https://imagedelivery.net/K11gkZF3xaVyYzFESMdWIQ/005832af-b843-4fc5-d92a-8013fe6bcc00/full" alt="title technology"/>
 <Img src="https://imagedelivery.net/K11gkZF3xaVyYzFESMdWIQ/09fc30fd-1fea-4e6b-667f-793c19e80e00/full" alt="table technology"/>
 <Img src="https://imagedelivery.net/K11gkZF3xaVyYzFESMdWIQ/f5eea603-1d54-4f4f-695f-aff9fea5fc00/full" alt="start building with the technology"/>
-<Img src="https://imagedelivery.net/K11gkZF3xaVyYzFESMdWIQ/ee5b4e35-9d20-4c6d-11bf-6470d82cc700/full" alt="boilerplates and libraries"/>
+<Img src="https://imagedelivery.net/K11gkZF3xaVyYzFESMdWIQ/ee5b4e35-9d20-4c6d-11bf-6470d82cc700/full" alt="boilerplates and libraries"/> 
 
 Finally, visit our GitHub repo and add AI technologies here, get inspiration from the existing pages when creating your own: [https://github.com/lablab-ai/technologies](https://github.com/lablab-ai/technologies).
 
