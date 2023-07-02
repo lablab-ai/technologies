@@ -1,0 +1,50 @@
+---
+title: "LlamaIndex"
+description: "LlamaIndex is a project that provides a central interface to connect your LLM's with external data. It provides various kinds of indices and retreival mechanisms to perform different LLM tasks and obtain knowledge-augmented results."
+---
+
+# LlamaIndex
+ LlamaIndex is a comprehensive data framework designed to facilitate the integration of Large Language Models (LLMs) with external data. This toolkit serves as an intermediary between your data sources and LLMs, providing the necessary tools and structures for efficient data ingestion, structuring, querying, and integration with various application frameworks.
+
+
+| General  |  |
+| --- | --- |
+| Relese date | 2022 |
+| Repository | https://github.com/jerryjliu/llama_index |
+| Type | Large Language Model framework |
+
+
+### LlamaIndex - Resources
+Resources to get started with LlamaIndex
+* [LlamaIndex](https://github.com/jerryjliu/llama_index) GitHub Repository
+* [Documentation](https://gpt-index.readthedocs.io) Documentation of LlamaIndex
+
+---
+
+### LlamaIndex - Use cases
+Use cases for LlamaIndex
+
+* [Queries over your Data](https://gpt-index.readthedocs.io/en/latest/use_cases/queries.html) 
+LlamaIndex gives you the ability to query your data for any downstream LLM use case.
+  * [Semantic Search](https://gpt-index.readthedocs.io/en/latest/examples/vector_stores/SimpleIndexDemo.html) LlamaIndex provides an in-memory vector store for semantic search applications.
+  * [Summarization](https://gpt-index.readthedocs.io/en/latest/use_cases/queries.html#summarization) ListIndex in LlamaIndex is best suitable for summarization usecase which goes through all the data.
+  * [Queries over Structured Data] (https://gpt-index.readthedocs.io/en/latest/guides/tutorials/sql_guide.html) LlamaIndex provides an interface to query over structured data.
+  * [Synthesis over Heterogeneous Data] (https://gpt-index.readthedocs.io/en/latest/how_to/index/composability.html) LlamaIndex helps in synthesizing across heterogeneous data sources by composing a graph over your existing data.
+  * [Routing over Heterogeneous Data] (https://gpt-index.readthedocs.io/en/latest/examples/query_engine/RouterQueryEngine.html) LlamaIndex supports routing over heterogeneous data sources - for instance, if you want to “route” a query to an underlying Document or a sub-index.
+  * [Multi-Document Queries] (https://gpt-index.readthedocs.io/en/latest/use_cases/queries.html#multi-document-queries)  LlamaIndex supports generating a “query plan” containing sub-queries against sub-documents before synthesizing the final answer.
+  * [Multi-Step Queries] (https://gpt-index.readthedocs.io/en/latest/examples/query_transformations/SimpleIndexDemo-multistep.html) LlamaIndex can help to break a complex query into initial subquestions, and sequentially generate subquestions based on returned answers until the final answer is returned.
+  * [Temporal Queries] (https://gpt-index.readthedocs.io/en/latest/how_to/query_engine/advanced/second_stage.html) LlamaIndex supports quries that require understanding of time. 
+* [Agents](https://gpt-index.readthedocs.io/en/latest/use_cases/agents.html) Documentation for building Agents with LlamaIndex.
+* [Integrations into LLM Applications](https://gpt-index.readthedocs.io/en/latest/use_cases/apps.html#) Documentation for building Chatbots and Full-Stack Web Application with LlamaIndex.
+
+---
+
+### LlamaIndex - Example Projects
+Applications built with LlamaIndex
+
+* [AnySummary](https://www.anysummary.app/) Summarize/ Chat with any document/ url.
+* [CACTUS](https://www.linkedin.com/posts/mathewteoh_chromeextension-chatgpt-python-activity-7019362515566403584-ryqW/?utm_source=share&utm_medium=member_desktop) Contextual search on top of LinkedIn search results.
+* [Mynd](https://www.mynd.so/) A journaling app that uses AI to uncover insights and patterns over time.
+* [Albus](https://www.springworks.in/albus/) AI-powered knowledge bot for Slack.
+* [PapersGPT](https://jessezhang.org/llmdemo) Feed any scientific papers into GPT to give it deep customized knowledge.
+---
