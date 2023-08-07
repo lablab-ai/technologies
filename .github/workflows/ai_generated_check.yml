@@ -1,0 +1,42 @@
+name: AI Generated Content Check
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '**.mdx'
+
+jobs:
+  ai_generated_check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+          pip install actions-toolkit
+
+      - name: Extract changed files, with .mdx extension
+        id: changed-files
+        uses: jitterbit/get-changed-files@v1
+        with:
+          format: json
+
+      - name: Check AI Generated Content
+        run: |
+          python .github/scripts/ai_generated_check.py
+        env:
+          CHANGED_FILES: ${{ steps.changed-files.outputs.added_modified }}
+          REMOVED_FILES: ${{ steps.changed-files.outputs.removed }}
+          COPYLEAKS_API_KEY: ${{ secrets.COPYLEAKS_API_KEY }}
+          COPYLEAKS_EMAIL: ${{ secrets.COPYLEAKS_EMAIL }}
